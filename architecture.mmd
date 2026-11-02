@@ -1,0 +1,11 @@
+flowchart LR
+  B[Browser] --> E[CDN / WAF / rate limit]
+  E --> H[Typed command handler]
+  H --> V[Schema validation + normalization]
+  V --> I[Idempotency check]
+  I --> D[(Minimal inquiry DB)]
+  D --> O[(Outbox / queue)]
+  O --> W[Notification worker]
+  W --> R[Resend or approved email provider]
+  H --> M[Metrics + privacy-safe audit log]
+  W --> M
