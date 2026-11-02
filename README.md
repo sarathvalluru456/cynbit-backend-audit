@@ -29,7 +29,3 @@ The collector is intentionally conservative. It performs a small number of ordin
 ## Important interpretation note
 
 The report identifies design risks and verification priorities; it does not claim that Cynbit has a confirmed exploitable vulnerability. Server-side behavior, database permissions, rate limits, monitoring, and authentication controls require authorized access or a documented test window to verify.
-
-## Suggested submission
-
-Submit the repository URL together with a short note explaining that the assessment is passive-only and that the code snippets are reference implementations, not changes to Cynbit's production systems.
